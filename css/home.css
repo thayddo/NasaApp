@@ -8,6 +8,9 @@
     --earth-color: #b3caff;
     --mars-image: url("https://codeworld.io/wp-content/uploads/2023/12/mars.jpg");
     --mars-tilt: rotate(25.2deg);
-    --mars-tilt
 
+}
+
+.header{
+    background-color: #00076f;
 }
