@@ -1,0 +1,13 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display");
+
+:root{
+    --earth-image:url("https://codeworld.io/wp-content/uploads/2023/12/earth.jpg");
+    --earth-tilt: rotate(23.26deg);
+    --earth-day:23.9;
+    --earth-color: #b3caff;
+    --mars-image: url("https://codeworld.io/wp-content/uploads/2023/12/mars.jpg");
+    --mars-tilt: rotate(25.2deg);
+    --mars-tilt
+
+}
