@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <link rel=“stylesheet” type=“text/css” href=“../css/login.css”>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css"
 </head>
 <body>
-    <div class="container">
-        <div class="text_title">
-            <h1 class="title_login">Login</h1>
-            <p class="text_resum">Start your journey</p>
+    <div class="page">
+        <div class="rigth">
+            <img src="../img/astronauta.png" alt="">
         </div>
-        <div>
-            <input class="logintext" type="text" value="Your user...(for example: name123).">
-            <input class="pass" type="password" value="write your password...">
-            <div class="bottom">
-                <input class="buttom" type="button" value="Sign in">
-            </div>
+        <div class="left">
+            <form method="POST" class="formLogin">
+                <h1>Login</h1>
+                <p>Write your data and Start your journey here!</p>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Write your email..." autofocus="true" />
+                <label for="password">Senha</label>
+                <input type="password" placeholder="Write your password...     " />
+                <a href="/">Esqueci minha senha</a>
+                <input type="submit" value="Sign in" class="btn" />
+            </form>
         </div>
     </div>
-    
     
 </body>
 </html>

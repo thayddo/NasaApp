@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/image.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    width: 60%;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.rigth {
+    align-items: center;
+    width: 30%;
+    height: 20%;
+}
+.left {
+    align-items: left;
+}
+
+.login-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 10%;
+    max-height: 10%;
+    object-fit: cover;
+}
+
+.formLogin {
+    left: 40%;
+    display: flex;
+    align-items: left;
+    flex-direction:column;
+}
+
+.formLogin h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.formLogin p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.formLogin label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formLogin input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formLogin a {
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .image-content {
+        order: -1;
+    }
+
+    .image-content img {
+        max-height: 100px;
+    }
+}
