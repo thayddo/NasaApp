@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
+    <script src="javascript/about.js"></script>
     <title>About us</title>
 </head>
 <body>
@@ -20,22 +21,5 @@
             <img src="img/us.jpeg" alt="Our Team">
         </div>
     </div>
-    <script>
-        function checkScroll() {
-            const elements = document.querySelectorAll('.left, .right');
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                if (rect.top <= windowHeight * 0.75) {
-                    el.style.animation = 'none';
-                    el.offsetHeight; // Trigger reflow
-                    el.style.animation = null;
-                }
-            });
-        }
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('resize', checkScroll);
-        checkScroll(); // Initial check
-    </script>
 </body>
 </html>
