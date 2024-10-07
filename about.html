@@ -4,21 +4,38 @@
     <link rel="icon" href="img/logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
     <link rel="stylesheet" href="css/about.css">
+    <title>About us</title>
 </head>
 <body>
     <div class="main">
-        <div class="rigth">
-            <img src="img/us.jpeg" alt="">
-        </div>
-        <div>
+        <div class="left">
             <h1>About us</h1>
             <p>
                 We are 4th and 5th year computer science students.     
                 Developers and designers, with an emphasis on web development.
             </p>
         </div>
+        <div class="right">
+            <img src="img/us.jpeg" alt="Our Team">
+        </div>
     </div>
+    <script>
+        function checkScroll() {
+            const elements = document.querySelectorAll('.left, .right');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight * 0.75) {
+                    el.style.animation = 'none';
+                    el.offsetHeight; // Trigger reflow
+                    el.style.animation = null;
+                }
+            });
+        }
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('resize', checkScroll);
+        checkScroll(); // Initial check
+    </script>
 </body>
 </html>
